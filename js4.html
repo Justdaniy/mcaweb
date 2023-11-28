@@ -1,0 +1,16 @@
+<html>
+<body>
+    <button onclick="changeColor()">click me</button>
+    <script>
+        var index =0;
+        function changeColor() {
+            // your color list
+            var colorList = ["red","green","blue"];
+            // set the color
+            document.body.style.backgroundColor = colorList[index]; 
+            index++;
+            // if index is greater than the list size, reset
+            if (index==colorList.length) index=0; 
+        }
+    </script>
+</body></html>
